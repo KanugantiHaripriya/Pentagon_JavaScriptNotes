@@ -1,0 +1,42 @@
+//charAt()
+var str="hello world"
+console.log(str.charAt(4))
+
+// toLowerCase()
+var str="HEllo"
+console.log(str.toLowerCase())
+
+//toUpperCase()
+var str="hello world"
+console.log(str.toUpperCase())
+
+//substring()
+var str="hello world"
+console.log(str.substring(2))
+console.log(str.substring(-2)) //hello world
+
+//slice()
+var str="hello world"
+console.log(str.slice(2))
+console.log(str.slice(2,8))
+//negative index
+console.log(str.slice(-2))
+
+
+//replace()
+var str="hello world"
+console.log(str.replace("hello","hii"))
+
+//replaceAll()
+var str="hello hello world"
+console.log(str.replaceAll("hello","hii"))
+
+//trim
+var str="     hello world     "
+console.log(str)
+console.log(str.trim()+"hello")
+
+//concat
+let str1="hello"
+let str2="world"
+console.log(str1.concat(str2))

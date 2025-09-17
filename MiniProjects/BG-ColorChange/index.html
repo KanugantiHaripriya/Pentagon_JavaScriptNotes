@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h2>The Background Color is : <span id="color">White</span></h2>
+      <button id="btn" class="btn btn-hero">Change Background</button>
+    </div>
+  </main>
+
+  <!-- ✅ keep JavaScript inside script tag or external file -->
+  <script>
+    const colors = ['white','red','blue','green','yellow','violet'];
+
+    const buttonControl = document.getElementById('btn');
+    const spanControl   = document.getElementById('color');
+
+    buttonControl.addEventListener('click', () => {
+      let index = generateRandomNumber();
+      document.body.style.backgroundColor = colors[index];
+      spanControl.textContent = colors[index];
+    });
+
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * colors.length); 
+    }
+  </script>
+</body>
+</html>
+
+

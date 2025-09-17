@@ -1,0 +1,48 @@
+h1{
+	text-align: center;
+	color:grey;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+	padding:15px;
+	margin:10%;
+	border-radius: 20px;
+	width:450px;
+	height:350px;
+	margin:auto;
+	background-color: rgb(106, 103, 103);
+	box-shadow: 0px 0px 10px black;
+}
+.display-box{
+	font-family: 'orbitron',sans-serif;
+	background-color: rgb(248, 241, 233);
+	border-radius: 3cqh;
+	border:1px solid black;
+	color:black;
+	width:98%;
+	height:65%;
+	font-size:100%;
+}
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #fefdff;
+    border: 1px solid rgb(106, 103, 103);
+    border-radius: 15px;
+    width: 95%;
+    height: 45px;        /* set height */
+    line-height: 40px;   /* centers text vertically */
+    padding: 0;          /* reset padding to avoid conflicts */
+    outline: none;
+    cursor: pointer;     /* makes it look clickable */
+	font-size:130%;
+}
+
+input:active[type=button]{
+	background-color:rgb(110, 110, 130);
+	box-shadow:0px 0px 10px black;
+	color:white;
+
+}
+body{
+	background-color: beige;
+}

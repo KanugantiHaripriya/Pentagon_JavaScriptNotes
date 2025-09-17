@@ -1,0 +1,16 @@
+//keys,values
+//seal
+const user={name:"Raj",age:30}
+Object.seal(user)
+
+user.name = "Virat"
+// user.city = "Mumbai" // not allowed\
+//delete user.age //not allowed
+console.log(user)
+
+//Object.assign
+let target={a:1}
+let source = {b:2,c:3}
+console.log(target)
+Object.assign(target,source)
+console.log(target)

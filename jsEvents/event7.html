@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- onfocus -->
+	<!-- the focus event listener in javascript is triggered when an element gains focus - usually through keyboard navigation (like pressing tab button) or when clicked -->
+	<input type="text" id="myinput" onfocus="FocusOnElement()" placeholder="Click or tab into me">
+
+	<script>
+	function FocusOnElement(){
+		let input = document.getElementById('myinput');
+		input.style.border = "2px solid green";
+		input.style.backgroundColor = "pink";
+		input.style.height = "50px";
+		input.style.width = "200px";
+		input.style.boxShadow = "0px 0px 10px blue";
+	}
+	</script>
+
+</body>
+</html>

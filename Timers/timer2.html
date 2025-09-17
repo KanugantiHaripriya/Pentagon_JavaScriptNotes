@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// how to stop setInterval()
+		// when we need to stop setIntervalMethod we should use clearInterval()
+		// in every setInterval() we need that id inorder to clear the interval
+
+		let sayHello = () =>{
+		alert("hello how are you!!")
+	}
+
+	let timerId=setInterval(sayHello,3000)
+	setTimeout(()=>{
+		clearInterval(timerId)
+		alert('timer stopped')
+	},9000)
+	</script>
+</body>
+</html>

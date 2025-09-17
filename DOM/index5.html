@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id='one'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consectetur debitis temporibus. Nam fuga consequuntur harum cupiditate quisquam illo eius expedita sed et vero quibusdam, itaque ipsam obcaecati id alias!</p>
+	<script>
+
+		//createElement() ana append()
+		
+		let btnref = document.createElement('button');  
+		btnref.innerHTML = 'Dynamic butt';  
+
+		let body = document.body;  
+
+		body.append(btnref);
+
+		let pref=document.createElement('p')
+		pref.innerHTML='i am paragraph tag created by js'
+		body.append(pref)
+
+		//remove()
+		let del=document.getElementById('one')
+		del.remove()
+	</script>
+</body>
+</html>

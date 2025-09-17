@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1 id="one">welcome to pentagonspace</h1>
+	<p id="two">x</p>
+	<h3 id = three> hey</h3>
+	<button onclick="change()">Click here</button>
+	<script>
+		var href = document.getElementById('one')
+    	href.innerHTML = "Thank you for visiting"
+
+		var pref = document.getElementById('two')
+		pref.textContent = "welcome to javascript class"
+
+		function change(){
+			let h3ref = document.getElementById('three')
+			h3ref.textContent="Button clicked"
+		}
+	</script>
+</body>
+</html>

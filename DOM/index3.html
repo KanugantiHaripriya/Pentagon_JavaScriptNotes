@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>hiii js</h1>
+	<p id ="one"> </p>
+	<p id ="two"> </p>
+	<h2>hey</h2>
+	<h2>hello</h2>
+
+	<h3>First h3 tag</h3>
+	<h3>Second h3 tag</h3>
+
+	<label>username</label><input type="text" name="username">
+	<h1>Pentagon Space</h1>
+	<p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque perferendis modi? Rem suscipit, similique reiciendis consectetur officiis voluptatum, eius iste mollitia eum amet quidem assumenda sint velit facere harum.</p>
+
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quidem optio laudantium cum minus cumque? Enim veritatis atque id nesciunt earum ut animi, quod commodi tenetur, corrupti recusandae officia autem?</p>
+	
+	<h5 id="one">yayyy!!</h5>
+	<script>
+		//differene between textContent and innerHTml
+		// innerHTML -->  if we have any html tag present while using innerHtml  then innerhtml property recognises the html tag
+		let pref= document.getElementById('one')
+		pref.innerHTML =" <i><u> hello how are you</u></i>"
+
+		//textContent --> if we have any html tags present while using the textContent it will not recognizes and it will print html tags as it is 
+		let plref = document.getElementById('two')
+		plref.textContent = "<i><u> hello how are you </u></i>"
+
+		//document.getElementBy Name
+		let username= document.getElementsByName('username')
+		console.log(username)
+		console.log(username[0])
+		username[0].style.backgroundColor = "pink"
+
+		//document.getElementsByTagName()
+		let a =document.getElementsByTagName('h2')
+		console.log(a)
+		a[0].innerHTML = "Welcome to Pentagon Space"
+		a[1].innerHTML = "HII"
+
+		let labels = document.getElementsByTagName('label')
+		labels[0].innerHTML = "Enter your name"
+
+		//document.getElementsByClassName()
+		let b = document.getElementsByClassName('p1')
+		b[0].style.color = 'orange'
+		
+		</script>
+</body>
+</html>

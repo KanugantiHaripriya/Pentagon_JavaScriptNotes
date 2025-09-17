@@ -1,0 +1,78 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 350px;
+}
+
+.form h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="url"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+input[type="url"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+button {
+  background: #333149;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #9693bc;
+  color:black;
+}
+
+#qrcode-container {
+  margin: 20px auto;
+  padding: 10px;
+  display: none; /* initially hidden until generated */
+}
+
+.qrcode {
+  margin: auto;
+  padding: 10px;
+  background: #fff;
+  border: 2px dashed #6c63ff;
+  border-radius: 10px;
+  display: inline-block;
+}
